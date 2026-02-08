@@ -1,11 +1,14 @@
 import express from "express"
 import dotenv from "dotenv"
 import path from "path"
+import { fileURLToPath } from "url";
 import authRoutes from './routes/auth.route.js'
 import messageRoutes from './routes/message.route.js'
 
 const app = express();
-const __dirname = path.resolve();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 dotenv.config();
 
