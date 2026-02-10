@@ -90,8 +90,8 @@ JWT_SECRET=your_secret_key
 Start backend server:
 
 npm run dev
-
-🛠 Frontend Setup
+```
+### 🛠 Frontend Setup
 cd frontend
 npm install
 
@@ -163,9 +163,8 @@ import { io } from "socket.io-client";
 
 const socket = io(import.meta.env.VITE_SOCKET_URL, {
   transports: ["websocket"],
-});
-
-🧪 Testing the App
+});```
+### 🧪 Testing the App
 
 Open the live demo in two different browsers
 
@@ -173,9 +172,8 @@ Login with different users
 
 Send messages
 
-Messages appear instantly → ✅ real-time confirmed
-
-📌 Known Limitations
+Messages appear instantly → ✅ real-time confirmed```
+### 📌 Known Limitations
 
 Render free tier sleeps after inactivity
 
@@ -183,7 +181,7 @@ Initial load may be slow (cold start)
 
 Intended for learning & portfolio use
 
-🙌 Acknowledgements
+### 🙌 Acknowledgements
 
 This project is inspired by and built by following a Socket.IO chat application tutorial, with additional work on:
 
